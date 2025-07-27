@@ -80,7 +80,7 @@ const Index = () => {
               className="h-12 w-12"
             />
             <div>
-              <h1 className="font-bold text-gray-900 text-[1.56rem]">Ритмы Гор</h1>
+              <h1 className="font-bold text-gray-900 text-[1.56rem]">РИТМЫ ГОР</h1>
               <p className="text-sm text-gray-600">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="md:text-7xl font-bold mb-6 animate-slide-up text-3xl">
               Почувствуй
-              <span className="block text-secondary animate-pulse-dance">Ритм Гор</span>
+              <span className="block text-secondary animate-pulse-dance">Ритмы Гор</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами

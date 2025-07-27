@@ -77,7 +77,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
               alt="Ритмы Гор" 
-              className="h-12 w-12 rounded-full mx-0 my-0 py-[41px] px-[46px] object-contain"
+              className="h-12 w-12 rounded-full py-0 my-2.5 object-contain mx-3 px-0"
             />
             <div>
               <h1 className="font-bold text-gray-900 text-[1.56rem]">РИТМЫ ГОР</h1>

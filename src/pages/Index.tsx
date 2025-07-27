@@ -80,7 +80,7 @@ const Index = () => {
               className="h-12 w-12"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Ритмы Гор</h1>
+              <h1 className="font-bold text-gray-900 text-[1.56rem]">Ритмы Гор</h1>
               <p className="text-sm text-gray-600">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
@@ -97,10 +97,10 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-pink-900"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+            <h1 className="md:text-7xl font-bold mb-6 animate-slide-up text-3xl">
               Почувствуй
               <span className="block text-secondary animate-pulse-dance">Ритм Гор</span>
             </h1>

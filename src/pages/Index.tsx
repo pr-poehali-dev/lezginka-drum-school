@@ -335,14 +335,14 @@ const Index = () => {
               </div>
               <CardHeader>
                 <CardTitle className="text-2xl">Абонемент на месяц</CardTitle>
-                <div className="text-4xl font-bold text-primary">5500₽</div>
+                <div className="text-4xl font-bold text-primary">3500₽</div>
                 <div className="text-sm text-gray-500">8 занятий</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-600">
                   <li>✓ 8 занятий в месяц</li>
                   <li>✓ Любые направления</li>
-                  <li>✓ Заморозка абонемента</li>
+                  <li></li>
                   <li>✓ Скидка 20%</li>
                 </ul>
                 <Button className="w-full mt-6">Записаться</Button>
@@ -352,7 +352,7 @@ const Index = () => {
             <Card className="text-center hover:shadow-xl transition-all duration-300 animate-fade-in">
               <CardHeader>
                 <CardTitle className="text-2xl">Индивидуальное</CardTitle>
-                <div className="text-4xl font-bold text-primary">3000₽</div>
+                <div className="text-4xl font-bold text-primary">2500₽</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-600">
@@ -383,8 +383,8 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Адрес</h3>
-                  <p className="text-gray-600">г. Москва, ул. Кавказская, д. 15</p>
-                  <p className="text-gray-600">Метро "Кавказская", 2 минуты пешком</p>
+                  <p className="text-gray-600">г. Санкт-Петербург, ул. Ефимова, 4А</p>
+                  <p className="text-gray-600">Метро "Садовая / Сенная / Спасская", 2 минуты пешком</p>
                 </div>
               </div>
 
@@ -394,7 +394,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Телефон</h3>
-                  <p className="text-gray-600">+7 (495) 123-45-67</p>
+                  <p className="text-gray-600">+7 (921) 785-42-33</p>
                   <p className="text-gray-600">Ежедневно с 10:00 до 22:00</p>
                 </div>
               </div>
@@ -416,7 +416,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Соцсети</h3>
-                  <p className="text-gray-600">@ritmygor_moscow</p>
+                  <p className="text-gray-600">@ritmi_gor_spb</p>
                   <p className="text-gray-600">Видео с занятий и выступлений</p>
                 </div>
               </div>

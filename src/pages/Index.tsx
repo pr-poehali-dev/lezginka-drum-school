@@ -81,7 +81,7 @@ const Index = () => {
             />
             <div>
               <h1 className="font-bold text-gray-900 text-[1.56rem]">РИТМЫ ГОР</h1>
-              <p className="text-sm text-gray-600">Школа лезгинки и кавказских барабанов</p>
+              <p className="text-sm text-gray-600 font-medium">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
           <nav className="hidden md:flex space-x-8">

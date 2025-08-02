@@ -465,7 +465,7 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
                   alt="Ритмы Гор" 
-                  className="h-10 w-10"
+                  className="h-10 w-10 px-0 py-[3px] object-contain"
                 />
                 <div>
                   <h3 className="text-xl font-bold">Ритмы Гор</h3>
@@ -492,7 +492,7 @@ const Index = () => {
               <div className="space-y-2 text-gray-400">
                 <p>г. Санкт-Петербург, ул. Ефимова, д. 4А   БЦ "МИР"</p>
                 <p>+7 (921) 785-42-33</p>
-                <p>ritmygor@yandex..ru</p>
+                <p>ritmi-gor@yandex..ru</p>
               </div>
             </div>
           </div>

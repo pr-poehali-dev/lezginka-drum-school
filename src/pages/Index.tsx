@@ -482,8 +482,8 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li>Лезгинка</li>
                 <li>Кавказские барабаны</li>
-                <li>Адыгейские танцы</li>
-                <li>Осетинские танцы</li>
+                <li>Мужская свадебная лезгинка</li>
+                <li>Женская свадебная лезгинка</li>
               </ul>
             </div>
             
@@ -498,7 +498,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Ритмы Гор. Все права защищены.</p>
+            <p>© 2013 Ритмы Гор. Все права защищены.</p>
           </div>
         </div>
       </footer>

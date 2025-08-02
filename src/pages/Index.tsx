@@ -57,11 +57,6 @@ const Index = () => {
   ];
 
   const schedule = [
-    { day: "Понедельник", time: "19:00-20:30", class: "Лезгинка (начинающие)" },
-    { day: "Вторник", time: "18:00-19:00", class: "Кавказские барабаны" },
-    { day: "Среда", time: "19:00-20:30", class: "Адыгейские танцы" },
-    { day: "Четверг", time: "18:00-19:00", class: "Барабаны (продолжающие)" },
-    { day: "Пятница", time: "19:00-20:30", class: "Осетинские танцы" },
     { day: "Суббота", time: "11:00-12:30", class: "Семейная лезгинка" },
     { day: "Суббота", time: "15:00-16:30", class: "Лезгинка (все уровни)" },
     { day: "Воскресенье", time: "12:00-13:30", class: "Детская группа (6-12 лет)" },
@@ -102,7 +97,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
               Почувствуй
-              <span className="block text-secondary animate-pulse-dance" style={{ textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white' }}>РитмыГор</span>
+              <span className="block text-secondary animate-pulse-dance" style={{ textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white' }}>Ритмы Гор</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами

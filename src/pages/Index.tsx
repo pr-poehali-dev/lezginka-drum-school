@@ -102,7 +102,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
               Почувствуй
-              <span className="block text-secondary animate-pulse-dance">Ритм Гор</span>
+              <span className="block text-secondary animate-pulse-dance" style={{ textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white' }}>РитмыГор</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами

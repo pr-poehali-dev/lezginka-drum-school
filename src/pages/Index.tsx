@@ -312,7 +312,7 @@ const Index = () => {
             <Card className="text-center hover:shadow-xl transition-all duration-300 animate-fade-in">
               <CardHeader>
                 <CardTitle className="text-2xl">Разовое занятие</CardTitle>
-                <div className="text-4xl font-bold text-primary">1500₽</div>
+                <div className="text-4xl font-bold text-primary">800₽</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-600">
@@ -378,8 +378,8 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Адрес</h3>
-                  <p className="text-gray-600">г. Москва, ул. Кавказская, д. 15</p>
-                  <p className="text-gray-600">Метро "Кавказская", 2 минуты пешком</p>
+                  <p className="text-gray-600">г. Санкт-Петербург, ул. Ефимова, д. 4А   БЦ "МИР"</p>
+                  <p className="text-gray-600">Метро "Садовая / Сенная / Спасская", 2 минуты пешком</p>
                 </div>
               </div>
 
@@ -389,7 +389,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Телефон</h3>
-                  <p className="text-gray-600">+7 (495) 123-45-67</p>
+                  <p className="text-gray-600">+7 (921) 785-42-33</p>
                   <p className="text-gray-600">Ежедневно с 10:00 до 22:00</p>
                 </div>
               </div>
@@ -411,7 +411,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Соцсети</h3>
-                  <p className="text-gray-600">@ritmygor_moscow</p>
+                  <p className="text-gray-600">@ritmi_gor_spb</p>
                   <p className="text-gray-600">Видео с занятий и выступлений</p>
                 </div>
               </div>
@@ -490,9 +490,9 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-gray-400">
-                <p>г. Москва, ул. Кавказская, д. 15</p>
-                <p>+7 (495) 123-45-67</p>
-                <p>info@ritmygor.ru</p>
+                <p>г. Санкт-Петербург, ул. Ефимова, д. 4А   БЦ "МИР"</p>
+                <p>+7 (921) 785-42-33</p>
+                <p>ritmygor@yandex..ru</p>
               </div>
             </div>
           </div>

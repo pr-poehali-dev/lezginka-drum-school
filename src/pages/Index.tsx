@@ -67,7 +67,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between px-0 py-5">
+        <div className="container flex items-center justify-between px-0 mx-[18px] my-0.5 py-[23px]">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 

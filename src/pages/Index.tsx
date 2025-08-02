@@ -337,7 +337,7 @@ const Index = () => {
                 <ul className="space-y-3 text-gray-600">
                   <li>✓ 8 занятий в месяц</li>
                   <li>✓ Любые направления</li>
-                  <li>✓ Заморозка абонемента</li>
+                  <li></li>
                   <li>✓ Скидка 20%</li>
                 </ul>
                 <Button className="w-full mt-6">Записаться</Button>

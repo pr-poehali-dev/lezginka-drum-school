@@ -400,7 +400,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600">info@ritmygor.ru</p>
+                  <p className="text-gray-600">ritmi-gor@yandex.ru</p>
                   <p className="text-gray-600">Ответим в течение часа</p>
                 </div>
               </div>

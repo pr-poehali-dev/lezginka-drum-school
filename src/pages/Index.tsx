@@ -75,7 +75,7 @@ const Index = () => {
               className="h-12 w-12"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Ритмы Гор</h1>
+              <h1 className="text-xl font-bold text-[#f97415]">Ритмы Гор</h1>
               <p className="text-sm text-gray-600">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>

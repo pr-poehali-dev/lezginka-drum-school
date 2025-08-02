@@ -330,7 +330,7 @@ const Index = () => {
               </div>
               <CardHeader>
                 <CardTitle className="text-2xl">Абонемент на месяц</CardTitle>
-                <div className="text-4xl font-bold text-primary">5500₽</div>
+                <div className="text-4xl font-bold text-primary">3500₽</div>
                 <div className="text-sm text-gray-500">8 занятий</div>
               </CardHeader>
               <CardContent>
@@ -347,7 +347,7 @@ const Index = () => {
             <Card className="text-center hover:shadow-xl transition-all duration-300 animate-fade-in">
               <CardHeader>
                 <CardTitle className="text-2xl">Индивидуальное</CardTitle>
-                <div className="text-4xl font-bold text-primary">3000₽</div>
+                <div className="text-4xl font-bold text-primary">2500₽</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-600">

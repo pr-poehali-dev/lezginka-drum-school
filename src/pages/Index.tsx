@@ -68,34 +68,34 @@ const Index = () => {
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
               alt="Ритмы Гор" 
-              className="h-12 w-12 px-0 py-0.5"
+              className="h-10 w-10 sm:h-12 sm:w-12 px-0 py-0.5"
             />
             <div>
-              <h1 className="text-xl font-bold text-[#f97415]">Ритмы Гор</h1>
-              <p className="text-sm text-gray-600">Школа лезгинки и кавказских барабанов</p>
+              <h1 className="text-lg sm:text-xl font-bold text-[#f97415]">Ритмы Гор</h1>
+              <p className="text-xs sm:text-sm text-gray-600 hidden sm:block">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             <a href="#directions" className="text-gray-700 hover:text-primary transition-colors">Направления</a>
             <a href="#schedule" className="text-gray-700 hover:text-primary transition-colors">Расписание</a>
             <a href="#teachers" className="text-gray-700 hover:text-primary transition-colors">Преподаватели</a>
             <a href="#gallery" className="text-gray-700 hover:text-primary transition-colors">Галерея</a>
             <a href="#contacts" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button>Записаться</Button>
+          <Button className="text-sm px-3 py-2 sm:px-4 sm:py-2">Записаться</Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up">
               Почувствуй
               <span className="block text-secondary animate-pulse-dance" style={{ textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white' }}>Ритмы Гор</span>
             </h1>
@@ -211,14 +211,14 @@ const Index = () => {
       </section>
 
       {/* Teachers Section */}
-      <section id="teachers" className="py-20 bg-gray-50">
+      <section id="teachers" className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши преподаватели</h2>
-            <p className="text-xl text-gray-600">Мастера своего дела с многолетним опытом</p>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Наши преподаватели</h2>
+            <p className="text-lg sm:text-xl text-gray-600">Мастера своего дела с многолетним опытом</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {teachers.map((teacher, index) => (
               <Card 
                 key={index} 
@@ -226,21 +226,21 @@ const Index = () => {
                 style={{animationDelay: `${index * 0.2}s`}}
               >
                 <CardHeader>
-                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4">
-                    <Icon name="User" size={40} className="text-white" />
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-4">
+                    <Icon name="User" size={32} className="text-white sm:w-10 sm:h-10" />
                   </div>
-                  <CardTitle className="text-xl">{teacher.name}</CardTitle>
-                  <CardDescription className="text-primary font-semibold">
+                  <CardTitle className="text-lg sm:text-xl">{teacher.name}</CardTitle>
+                  <CardDescription className="text-primary font-semibold text-sm sm:text-base">
                     {teacher.specialty}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     <div className="flex items-center justify-center space-x-2">
-                      <Icon name="Award" className="text-secondary" />
-                      <span className="text-gray-700">{teacher.experience} опыта</span>
+                      <Icon name="Award" className="text-secondary" size={16} />
+                      <span className="text-gray-700 text-sm sm:text-base">{teacher.experience} опыта</span>
                     </div>
-                    <p className="text-gray-600">{teacher.description}</p>
+                    <p className="text-gray-600 text-sm sm:text-base">{teacher.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -250,14 +250,14 @@ const Index = () => {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-20">
+      <section id="gallery" className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Галерея</h2>
-            <p className="text-xl text-gray-600">Моменты наших занятий и выступлений</p>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Галерея</h2>
+            <p className="text-lg sm:text-xl text-gray-600">Моменты наших занятий и выступлений</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group">
               <img 
                 src="img/9ec75f3c-2307-453c-a688-ca5b98e722d5.jpg" 
@@ -363,29 +363,29 @@ const Index = () => {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-20">
+      <section id="contacts" className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Контакты</h2>
-            <p className="text-xl text-gray-600">Приходите к нам или свяжитесь удобным способом</p>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Контакты</h2>
+            <p className="text-lg sm:text-xl text-gray-600">Приходите к нам или свяжитесь удобным способом</p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="bg-primary text-white p-3 rounded-lg">
-                  <Icon name="MapPin" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="flex items-start space-x-3 sm:space-x-4 animate-fade-in">
+                <div className="bg-primary text-white p-2 sm:p-3 rounded-lg">
+                  <Icon name="MapPin" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Адрес</h3>
-                  <p className="text-gray-600">г. Санкт-Петербург, ул. Ефимова, д. 4А   БЦ "МИР"</p>
-                  <p className="text-gray-600">Метро "Садовая / Сенная / Спасская", 2 минуты пешком</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Адрес</h3>
+                  <p className="text-sm sm:text-base text-gray-600">г. Санкт-Петербург, ул. Ефимова, д. 4А   БЦ "МИР"</p>
+                  <p className="text-sm sm:text-base text-gray-600">Метро "Садовая / Сенная / Спасская", 2 минуты пешком</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 animate-fade-in">
-                <div className="bg-primary text-white p-3 rounded-lg">
-                  <Icon name="Phone" />
+              <div className="flex items-start space-x-3 sm:space-x-4 animate-fade-in">
+                <div className="bg-primary text-white p-2 sm:p-3 rounded-lg">
+                  <Icon name="Phone" size={20} />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Телефон</h3>

@@ -66,8 +66,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50 mx-0">
-        <div className="container flex items-center justify-between py-2 px-0 my-2 mx-[38px]">
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="container flex items-center justify-between py-5 mx-0 px-[27px]">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
@@ -75,8 +75,8 @@ const Index = () => {
               className="h-16 w-16 sm:h-20 sm:w-20 px-0 py-1"
             />
             <div>
-              <h1 className="sm:text-xl font-bold text-[#bc5912] px-0 py-0 text-2xl">РИТМЫ ГОР</h1>
-              <p className="sm:text-sm text-gray-600 hidden sm:block py-0 text-left px-0 text-sm">Школа лезгинки и кавказских барабанов</p>
+              <h1 className="text-lg sm:text-xl font-bold text-[#bc5912]">Ритмы Гор</h1>
+              <p className="sm:text-sm text-gray-600 hidden sm:block py-0 text-left px-0 text-2xl">ансамбль</p>
             </div>
           </div>
           <nav className="hidden lg:flex space-x-8">
@@ -92,8 +92,8 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20 my-0 mx-0"></div>
-        <div className="container px-4 relative z-10 py-0 my-0 mx-0 bg-[#00000000]">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="md:text-7xl font-bold mb-6 animate-slide-up px-0 text-4xl">
               Почувствуй
@@ -469,7 +469,7 @@ const Index = () => {
                 />
                 <div>
                   <h3 className="text-xl font-bold">Ритмы Гор</h3>
-                  <p className="text-gray-400 text-sm">Школа кавказских танцев и барабанов</p>
+                  <p className="text-gray-400 text-sm">Школа кавказских танцев</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-4">
@@ -482,8 +482,8 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li>Лезгинка</li>
                 <li>Кавказские барабаны</li>
-                <li>Женская свадебная лезгинка</li>
-                <li>Мужская свадебная лезгинка</li>
+                <li>Адыгейские танцы</li>
+                <li>Осетинские танцы</li>
               </ul>
             </div>
             
@@ -498,7 +498,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2013 Ритмы Гор. Все права защищены.</p>
+            <p>&copy; 2024 Ритмы Гор. Все права защищены.</p>
           </div>
         </div>
       </footer>

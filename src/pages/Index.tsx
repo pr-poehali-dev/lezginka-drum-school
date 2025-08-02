@@ -469,7 +469,7 @@ const Index = () => {
                 />
                 <div>
                   <h3 className="text-xl font-bold">Ритмы Гор</h3>
-                  <p className="text-gray-400 text-sm">Школа кавказских танцев</p>
+                  <p className="text-gray-400 text-sm">Школа кавказских танцев и барабанов</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-4">

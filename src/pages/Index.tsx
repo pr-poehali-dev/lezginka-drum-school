@@ -75,7 +75,7 @@ const Index = () => {
               className="h-16 w-16 sm:h-20 sm:w-20 px-0 py-1"
             />
             <div>
-              <h1 className="text-lg sm:text-xl font-bold text-[#bc5912]">Ритмы Гор</h1>
+              <h1 className="sm:text-xl font-bold text-[#bc5912] text-sm">Ритмы Гор</h1>
               <p className="sm:text-sm text-gray-600 hidden sm:block py-0 text-left px-0 text-sm">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
@@ -92,8 +92,8 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="absolute inset-0 bg-black/20 my-0 mx-0"></div>
+        <div className="container px-4 relative z-10 py-0 my-0 mx-0">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="md:text-7xl font-bold mb-6 animate-slide-up px-0 text-4xl">
               Почувствуй

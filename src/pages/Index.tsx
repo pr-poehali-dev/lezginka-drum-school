@@ -67,7 +67,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container flex items-center justify-between py-5 px-0 mx-0">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
               src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
@@ -75,7 +75,7 @@ const Index = () => {
               className="h-10 w-10 sm:h-12 sm:w-12 px-0 py-0.5"
             />
             <div>
-              <h1 className="text-lg sm:text-xl font-bold text-[#f97415]">Ритмы Гор</h1>
+              <h1 className="text-lg sm:text-xl font-bold text-[#bc5912]">Ритмы Гор</h1>
               <p className="text-xs sm:text-sm text-gray-600 hidden sm:block">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up">
+            <h1 className="md:text-7xl font-bold mb-6 animate-slide-up px-0 text-4xl">
               Почувствуй
               <span className="block text-secondary animate-pulse-dance" style={{ textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white' }}>Ритмы Гор</span>
             </h1>
@@ -126,7 +126,7 @@ const Index = () => {
 
       {/* Directions Section */}
       <section id="directions" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-0 py-0">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Направления обучения</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">

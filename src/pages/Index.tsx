@@ -265,7 +265,10 @@ const Index = () => {
               </CardHeader>
               <CardContent className="p-6">
                 <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-center">Обладатели гран-при на международных фестивалях</li>
+                  <li className="flex items-center">
+                    <Icon name="Check" className="text-secondary mr-3" size={16} />
+                    Лауреаты международного фестиваля "Кавказские ритмы" (2022)
+                  </li>
                   <li className="flex items-center">
                     <Icon name="Check" className="text-secondary mr-3" size={16} />
                     1-е место на фестивале народных танцев в Сочи (2023)

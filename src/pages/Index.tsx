@@ -76,7 +76,7 @@ const Index = () => {
             />
             <div>
               <h1 className="text-lg sm:text-xl font-bold text-[#bc5912]">Ритмы Гор</h1>
-              <p className="text-xs sm:text-sm text-gray-600 hidden sm:block py-0 text-left px-0">Инструментально-хореографический ансамбль</p>
+              <p className="sm:text-sm text-gray-600 hidden sm:block py-0 text-left px-0 text-2xl">ансамбль</p>
             </div>
           </div>
           <nav className="hidden lg:flex space-x-8">

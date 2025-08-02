@@ -234,7 +234,7 @@ const Index = () => {
               <div className="bg-gradient-to-br from-secondary to-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Icon name="Calendar" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">10+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">12+</div>
               <p className="text-gray-600">Лет опыта</p>
             </div>
 
@@ -242,7 +242,7 @@ const Index = () => {
               <div className="bg-gradient-to-br from-primary to-secondary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Icon name="Star" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">350+</div>
               <p className="text-gray-600">Выступлений проведено</p>
             </div>
 
@@ -250,7 +250,7 @@ const Index = () => {
               <div className="bg-gradient-to-br from-secondary to-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Icon name="Award" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">15+</div>
+              <div className="text-3xl font-bold text-gray-900 mb-2">150+</div>
               <p className="text-gray-600">Наград получено</p>
             </div>
           </div>

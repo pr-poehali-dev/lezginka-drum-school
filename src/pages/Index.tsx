@@ -70,9 +70,9 @@ const Index = () => {
         <div className="container mx-auto flex items-center justify-between px-0 py-5">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
-              src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
+              src="https://cdn.poehali.dev/files/40efe8f0-ec8d-4b42-9db1-53749b3cbbd8.png" 
               alt="Ритмы Гор" 
-              className="h-10 w-10 sm:h-12 sm:w-12 py-0.5 my-1.5 px-0 mx-1"
+              className="h-10 w-auto sm:h-12 py-0.5 my-1.5 px-0 mx-1"
             />
             <div>
               <h1 className="sm:text-xl font-bold text-[#f97415] mx-0 py-1 text-xl">Ритмы Гор</h1>

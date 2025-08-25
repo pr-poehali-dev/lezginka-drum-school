@@ -67,22 +67,21 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto flex items-center justify-between px-0 py-5">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
-              src="https://cdn.poehali.dev/files/40efe8f0-ec8d-4b42-9db1-53749b3cbbd8.png" 
+              src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
               alt="Ритмы Гор" 
-              className="h-10 w-auto sm:h-12 my-1.5 mx-1 py-0 px-[3px]"
+              className="h-10 w-10 sm:h-12 sm:w-12 px-0 py-0.5"
             />
             <div>
-              <h1 className="sm:text-xl font-bold text-[#f97415] mx-0 py-1 text-xl"></h1>
-              <p className="text-xs sm:text-sm text-gray-600 hidden sm:block"></p>
+              <h1 className="text-lg sm:text-xl font-bold text-[#f97415]">Ритмы Гор</h1>
+              <p className="text-xs sm:text-sm text-gray-600 hidden sm:block">Школа лезгинки и кавказских барабанов</p>
             </div>
           </div>
           <nav className="hidden lg:flex space-x-8">
             <a href="#directions" className="text-gray-700 hover:text-primary transition-colors">Направления</a>
             <a href="#schedule" className="text-gray-700 hover:text-primary transition-colors">Расписание</a>
-            <a href="#achievements" className="text-gray-700 hover:text-primary transition-colors">Достижения</a>
             <a href="#teachers" className="text-gray-700 hover:text-primary transition-colors">Преподаватели</a>
             <a href="#gallery" className="text-gray-700 hover:text-primary transition-colors">Галерея</a>
             <a href="#contacts" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
@@ -207,104 +206,6 @@ const Index = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements Section */}
-      <section id="achievements" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши достижения</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Более 10 лет мы сохраняем и передаём традиции кавказской культуры
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center animate-fade-in">
-              <div className="bg-gradient-to-br from-primary to-secondary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Icon name="Trophy" size={32} />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">500+</div>
-              <p className="text-gray-600">Учеников обучено</p>
-            </div>
-
-            <div className="text-center animate-fade-in" style={{animationDelay: '0.1s'}}>
-              <div className="bg-gradient-to-br from-secondary to-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Icon name="Calendar" size={32} />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">12+</div>
-              <p className="text-gray-600">Лет опыта</p>
-            </div>
-
-            <div className="text-center animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <div className="bg-gradient-to-br from-primary to-secondary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Icon name="Star" size={32} />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">350+</div>
-              <p className="text-gray-600">Выступлений проведено</p>
-            </div>
-
-            <div className="text-center animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="bg-gradient-to-br from-secondary to-primary text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Icon name="Award" size={32} />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">150+</div>
-              <p className="text-gray-600">Наград получено</p>
-            </div>
-          </div>
-
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in border-0 shadow-lg" style={{animationDelay: '0.4s'}}>
-              <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white">
-                <CardTitle className="text-2xl font-bold text-white flex items-center">
-                  <Icon name="Medal" className="mr-3" size={28} />
-                  Международные конкурсы
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-secondary mr-3" size={16} />
-                    Лауреаты международного фестиваля "Кавказские ритмы" (2022)
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-secondary mr-3" size={16} />
-                    1-е место на фестивале народных танцев в Сочи (2023)
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-secondary mr-3" size={16} />
-                    Дипломанты конкурса "Традиции гор" в Махачкале (2023)
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl transition-all duration-300 animate-fade-in border-0 shadow-lg" style={{animationDelay: '0.5s'}}>
-              <CardHeader className="bg-gradient-to-r from-secondary to-primary text-white">
-                <CardTitle className="text-2xl font-bold text-white flex items-center">
-                  <Icon name="Users" className="mr-3" size={28} />
-                  Социальные проекты
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-secondary mr-3" size={16} />
-                    Бесплатные мастер-классы в детских домах
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-secondary mr-3" size={16} />
-                    Выступления в домах престарелых
-                  </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-secondary mr-3" size={16} />
-                    Участие в благотворительных концертах
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -581,8 +482,8 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li>Лезгинка</li>
                 <li>Кавказские барабаны</li>
-                <li>Мужская свадебная лезгинка</li>
-                <li>Женская свадебная лезгинка</li>
+                <li>Адыгейские танцы</li>
+                <li>Осетинские танцы</li>
               </ul>
             </div>
             
@@ -597,7 +498,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2013 Ритмы Гор. Все права защищены.</p>
+            <p>&copy; 2024 Ритмы Гор. Все права защищены.</p>
           </div>
         </div>
       </footer>

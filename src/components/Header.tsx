@@ -54,15 +54,12 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto py-4 flex items-center justify-between px-[5px]">
-        <div className="flex items-center space-x-2 sm:space-x-3">
+        <div className="flex items-center">
           <img 
             src="https://cdn.poehali.dev/files/ff214173-f5f3-420d-a2ff-3a2cd9ac8ad0.png" 
             alt="Ритмы Гор" 
-            className="h-16 w-auto sm:h-16 sm:w-auto px-0 mx-0 my-0 py-0"
+            className="h-20 w-auto sm:h-24 md:h-28"
           />
-          <div>
-            <h1 className="sm:text-xl text-[#f97415] px-0 mx-0 my-0 py-0 font-bold text-left text-lg">Ритмы Гор</h1>
-          </div>
         </div>
 
         {/* Desktop Navigation */}

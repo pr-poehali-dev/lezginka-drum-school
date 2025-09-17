@@ -1,9 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['directions', 'schedule', 'teachers', 'gallery', 'contacts'];
+      const headerHeight = 80;
+      
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= headerHeight && rect.bottom > headerHeight) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Проверяем при загрузке
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -45,11 +69,11 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8">
-          <button onClick={() => handleScrollToSection('directions')} className="text-gray-700 hover:text-primary transition-colors">Направления</button>
-          <button onClick={() => handleScrollToSection('schedule')} className="text-gray-700 hover:text-primary transition-colors">Расписание</button>
-          <button onClick={() => handleScrollToSection('teachers')} className="text-gray-700 hover:text-primary transition-colors">Преподаватели</button>
-          <button onClick={() => handleScrollToSection('gallery')} className="text-gray-700 hover:text-primary transition-colors">Галерея</button>
-          <button onClick={() => handleScrollToSection('contacts')} className="text-gray-700 hover:text-primary transition-colors">Контакты</button>
+          <button onClick={() => handleScrollToSection('directions')} className={`transition-colors ${activeSection === 'directions' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Направления</button>
+          <button onClick={() => handleScrollToSection('schedule')} className={`transition-colors ${activeSection === 'schedule' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Расписание</button>
+          <button onClick={() => handleScrollToSection('teachers')} className={`transition-colors ${activeSection === 'teachers' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Преподаватели</button>
+          <button onClick={() => handleScrollToSection('gallery')} className={`transition-colors ${activeSection === 'gallery' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Галерея</button>
+          <button onClick={() => handleScrollToSection('contacts')} className={`transition-colors ${activeSection === 'contacts' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Контакты</button>
         </nav>
 
         <div className="flex items-center space-x-4">
@@ -73,31 +97,31 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               <button 
                 onClick={() => handleScrollToSection('directions')}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
+                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'directions' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Направления
               </button>
               <button 
                 onClick={() => handleScrollToSection('schedule')}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
+                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'schedule' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Расписание
               </button>
               <button 
                 onClick={() => handleScrollToSection('teachers')}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
+                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'teachers' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Преподаватели
               </button>
               <button 
                 onClick={() => handleScrollToSection('gallery')}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
+                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'gallery' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Галерея
               </button>
               <button 
                 onClick={() => handleScrollToSection('contacts')}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
+                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'contacts' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Контакты
               </button>

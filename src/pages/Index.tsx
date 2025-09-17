@@ -70,9 +70,9 @@ const Index = () => {
         <div className="container mx-auto py-4 flex items-center justify-between px-[5px]">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img 
-              src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
+              src="https://cdn.poehali.dev/files/ff214173-f5f3-420d-a2ff-3a2cd9ac8ad0.png" 
               alt="Ритмы Гор" 
-              className="h-14 w-16 sm:h-14 sm:w-16 px-0 mx-0 my-0 py-0"
+              className="h-14 w-auto sm:h-14 sm:w-auto px-0 mx-0 my-0 py-0"
             />
             <div>
               <h1 className="sm:text-xl text-[#f97415] px-0 mx-0 my-0 py-0 font-bold text-left text-lg">Ритмы Гор</h1>
@@ -464,9 +464,9 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="https://cdn.poehali.dev/files/4adb2951-6007-4c1e-a141-e67e3ee0fd70.png" 
+                  src="https://cdn.poehali.dev/files/ff214173-f5f3-420d-a2ff-3a2cd9ac8ad0.png" 
                   alt="Ритмы Гор" 
-                  className="h-10 w-10 px-0 py-[3px] object-contain"
+                  className="h-10 w-auto px-0 py-[3px] object-contain"
                 />
                 <div>
                   <h3 className="text-xl font-bold">Ритмы Гор</h3>

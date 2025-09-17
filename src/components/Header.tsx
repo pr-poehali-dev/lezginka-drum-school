@@ -13,6 +13,20 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleScrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 80; // Высота зафиксированной шапки
+      const elementPosition = element.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
+    closeMenu();
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto py-4 flex items-center justify-between px-[5px]">
@@ -31,11 +45,11 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8">
-          <a href="#directions" className="text-gray-700 hover:text-primary transition-colors">Направления</a>
-          <a href="#schedule" className="text-gray-700 hover:text-primary transition-colors">Расписание</a>
-          <a href="#teachers" className="text-gray-700 hover:text-primary transition-colors">Преподаватели</a>
-          <a href="#gallery" className="text-gray-700 hover:text-primary transition-colors">Галерея</a>
-          <a href="#contacts" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
+          <button onClick={() => handleScrollToSection('directions')} className="text-gray-700 hover:text-primary transition-colors">Направления</button>
+          <button onClick={() => handleScrollToSection('schedule')} className="text-gray-700 hover:text-primary transition-colors">Расписание</button>
+          <button onClick={() => handleScrollToSection('teachers')} className="text-gray-700 hover:text-primary transition-colors">Преподаватели</button>
+          <button onClick={() => handleScrollToSection('gallery')} className="text-gray-700 hover:text-primary transition-colors">Галерея</button>
+          <button onClick={() => handleScrollToSection('contacts')} className="text-gray-700 hover:text-primary transition-colors">Контакты</button>
         </nav>
 
         <div className="flex items-center space-x-4">
@@ -57,41 +71,36 @@ const Header = () => {
         <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg animate-fade-in">
           <nav className="container mx-auto py-4 px-4">
             <div className="flex flex-col space-y-4">
-              <a 
-                href="#directions" 
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100"
+              <button 
+                onClick={() => handleScrollToSection('directions')}
+                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
               >
                 Направления
-              </a>
-              <a 
-                href="#schedule" 
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100"
+              </button>
+              <button 
+                onClick={() => handleScrollToSection('schedule')}
+                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
               >
                 Расписание
-              </a>
-              <a 
-                href="#teachers" 
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100"
+              </button>
+              <button 
+                onClick={() => handleScrollToSection('teachers')}
+                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
               >
                 Преподаватели
-              </a>
-              <a 
-                href="#gallery" 
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100"
+              </button>
+              <button 
+                onClick={() => handleScrollToSection('gallery')}
+                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
               >
                 Галерея
-              </a>
-              <a 
-                href="#contacts" 
-                onClick={closeMenu}
-                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100"
+              </button>
+              <button 
+                onClick={() => handleScrollToSection('contacts')}
+                className="text-gray-700 hover:text-primary transition-colors py-2 border-b border-gray-100 text-left"
               >
                 Контакты
-              </a>
+              </button>
               <Button 
                 onClick={closeMenu}
                 className="w-full mt-4"

@@ -51,7 +51,7 @@ const TeachersSection = () => {
                 <div className="space-y-3">
                   <div className="flex items-center justify-center space-x-2">
                     <Icon name="Award" className="text-secondary" size={16} />
-                    <span className="text-gray-700 text-sm sm:text-base">{teacher.experience} опыта</span>
+                    <span className="text-gray-700 text-sm sm:text-base">30 лет опыта</span>
                   </div>
                   <p className="text-gray-600 text-sm sm:text-base">{teacher.description}</p>
                 </div>

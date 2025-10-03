@@ -4,19 +4,19 @@ import Icon from '@/components/ui/icon';
 const TeachersSection = () => {
   const teachers = [
     {
-      name: "Магомед Алиев",
+      name: "Али Атлигишиев",
       specialty: "Лезгинка",
       experience: "15 лет",
       description: "Мастер традиционных кавказских танцев"
     },
     {
-      name: "Заира Хасанова",
+      name: "Фатима Хасаева",
       specialty: "Женские танцы",
       experience: "12 лет",
       description: "Преподаватель адыгейских и осетинских танцев"
     },
     {
-      name: "Руслан Дзагоев",
+      name: "Ама Бахмудов",
       specialty: "Барабаны",
       experience: "18 лет",
       description: "Мастер кавказских ударных инструментов"

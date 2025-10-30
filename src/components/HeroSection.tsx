@@ -19,7 +19,12 @@ const HeroSection = () => {
               <Icon name="Play" className="mr-2" />
               Начать обучение
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary animate-fade-in">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary animate-fade-in"
+              onClick={() => window.location.href = 'tel:+79217854233'}
+            >
               <Icon name="Phone" className="mr-2" />
               Связаться
             </Button>

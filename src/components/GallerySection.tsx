@@ -81,6 +81,42 @@ const GallerySection = () => {
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
           </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.8s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/47415a63-8844-4f4d-99d9-1cd23d4eaac4.PNG" 
+              alt="Выступление в парке" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.9s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/637d0590-10f7-401a-9ad3-e8a90c3a75ae.jpg" 
+              alt="Игра на барабанах на сцене" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '1s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/b489c35f-f528-4b9d-950f-feb01a394ef0.jpg" 
+              alt="Занятия в студии" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '1.1s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/08c015b1-694b-4a70-9605-bfcd52de26b3.jpg" 
+              alt="Танец лезгинка на занятиях" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
         </div>
       </div>
     </section>

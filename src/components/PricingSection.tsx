@@ -20,7 +20,7 @@ const PricingSection = () => {
             <CardContent>
               <ul className="space-y-3 text-gray-600">
                 <li>✓ 8 занятий барабаны</li>
-                <li>✓ Барабаны и танцы</li>
+                <li>✓ 8 занятий танцы</li>
                 <li>✓ Пробное занятие бесплатно</li>
               </ul>
               <Button className="w-full mt-6">Записаться</Button>

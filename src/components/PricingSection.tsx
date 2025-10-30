@@ -32,16 +32,16 @@ const PricingSection = () => {
               <Badge className="bg-secondary text-white px-4 py-1">Популярно</Badge>
             </div>
             <CardHeader>
-              <CardTitle className="text-2xl">Абонемент на месяц</CardTitle>
-              <div className="text-4xl font-bold text-primary">3500₽</div>
-              <div className="text-sm text-gray-500">8 занятий</div>
+              <CardTitle className="text-2xl">Общий абонемент</CardTitle>
+              <div className="text-4xl font-bold text-primary">5000₽</div>
+              <div className="text-sm text-gray-500">8 занятий барабаны</div>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3 text-gray-600">
                 <li>✓ 8 занятий в месяц</li>
-                <li>✓ Любые направления</li>
+                <li>✓ 8 занятий танцы</li>
                 <li></li>
-                <li>✓ Пробное занятие бесплатно</li>
+                <li>✓ Скидка 40 %</li>
               </ul>
               <Button className="w-full mt-6">Записаться</Button>
             </CardContent>

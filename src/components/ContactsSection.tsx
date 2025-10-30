@@ -51,8 +51,19 @@ const ContactsSection = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Соцсети</h3>
-                <p className="text-gray-600">@ritmi_gor_spb</p>
-                <p className="text-gray-600">Видео с занятий и выступлений</p>
+                <div className="space-y-2">
+                  <p className="text-gray-600">Instagram: @ritmi_gor_spb</p>
+                  <a 
+                    href="https://vk.com/ritmi_gor_spb" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline flex items-center gap-2"
+                  >
+                    <Icon name="Globe" size={16} />
+                    ВКонтакте: ritmi_gor_spb
+                  </a>
+                </div>
+                <p className="text-gray-600 mt-2">Видео с занятий и выступлений</p>
               </div>
             </div>
           </div>

@@ -12,8 +12,8 @@ const GallerySection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group">
             <img 
-              src="img/9ec75f3c-2307-453c-a688-ca5b98e722d5.jpg" 
-              alt="Танцоры лезгинки" 
+              src="https://cdn.poehali.dev/files/bf4669bc-8eb9-488a-bab3-ff5059ffd2de.jpg" 
+              alt="Занятия игры на барабанах" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
@@ -21,8 +21,8 @@ const GallerySection = () => {
           
           <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.1s'}}>
             <img 
-              src="img/e98a4d66-35cb-4bf9-9515-e2752d252ca2.jpg" 
-              alt="Кавказские барабаны" 
+              src="https://cdn.poehali.dev/files/1642e738-774e-4510-ae48-9da705783ba0.jpg" 
+              alt="Выступление с барабанами" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
@@ -30,24 +30,57 @@ const GallerySection = () => {
           
           <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.2s'}}>
             <img 
-              src="img/6f8de931-d915-4a9f-93a7-4d57f4cf09ec.jpg" 
-              alt="Занятия в студии" 
+              src="https://cdn.poehali.dev/files/d7dcd76f-ab1e-4f24-9ab5-a9fba7fc77d7.jpg" 
+              alt="Танец лезгинка" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
           </div>
 
-          {[4, 5, 6].map((item, index) => (
-            <div 
-              key={item}
-              className="aspect-square bg-gradient-to-br from-primary to-secondary rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group"
-              style={{animationDelay: `${(index + 3) * 0.1}s`}}
-            >
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                <Icon name="Image" size={48} className="text-white/80" />
-              </div>
-            </div>
-          ))}
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.3s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/69c4be42-6580-416f-9775-5d5f6f15c4b6.jpg" 
+              alt="Занятия по игре на барабанах" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.4s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/d8eda35f-6ef3-4788-a067-9edabc0c6f24.jpg" 
+              alt="Танцевальная группа" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.5s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/91697db1-b0c0-4382-8bd2-c45965ca0987.jpg" 
+              alt="Выступление на сцене" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.6s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/82d9c4ba-dd23-4ef2-8a22-554f7c7d7d95.jpg" 
+              alt="Танцевальная пара" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
+
+          <div className="aspect-square rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 animate-fade-in relative group" style={{animationDelay: '0.7s'}}>
+            <img 
+              src="https://cdn.poehali.dev/files/570c1202-befe-45f3-9406-e1cfb8ddc2be.jpg" 
+              alt="Репетиция в зале" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+          </div>
         </div>
       </div>
     </section>

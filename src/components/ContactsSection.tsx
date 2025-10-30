@@ -52,7 +52,15 @@ const ContactsSection = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Соцсети</h3>
                 <div className="space-y-2">
-                  <p className="text-gray-600">Instagram: @ritmi_gor_spb</p>
+                  <a 
+                    href="https://instagram.com/ritmi_gor_spb" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline flex items-center gap-2"
+                  >
+                    <Icon name="Instagram" size={16} />
+                    Instagram: @ritmi_gor_spb
+                  </a>
                   <a 
                     href="https://vk.com/ritmi_gor_spb" 
                     target="_blank" 

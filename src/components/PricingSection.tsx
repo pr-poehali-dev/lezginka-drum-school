@@ -41,7 +41,7 @@ const PricingSection = () => {
                 <li>✓ 8 занятий в месяц</li>
                 <li>✓ Любые направления</li>
                 <li></li>
-                <li>✓ Скидка 20%</li>
+                <li>✓ Пробное занятие бесплатно</li>
               </ul>
               <Button className="w-full mt-6">Записаться</Button>
             </CardContent>

@@ -31,8 +31,8 @@ const HeroSection = () => {
       <div className="absolute top-20 left-10 animate-pulse-dance">
         <Icon name="Music" size={40} className="text-white/30" />
       </div>
-      <div className="absolute bottom-20 right-10 animate-pulse-dance" style={{animationDelay: '1s'}}>
-        <img src="https://cdn.poehali.dev/files/4e255d5e-b3d5-469c-8c44-fdff9d14e5de.png" alt="Доул" className="w-20 h-20 opacity-30" />
+      <div className="absolute bottom-20 right-10 animate-spin-slow">
+        <img src="https://cdn.poehali.dev/files/4e255d5e-b3d5-469c-8c44-fdff9d14e5de.png" alt="Доул" className="w-10 h-10 opacity-30" />
       </div>
     </section>
   );

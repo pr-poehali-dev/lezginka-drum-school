@@ -32,7 +32,7 @@ const HeroSection = () => {
         <Icon name="Music" size={40} className="text-white/30" />
       </div>
       <div className="absolute bottom-20 right-10 animate-pulse-dance" style={{animationDelay: '1s'}}>
-        <img src="https://cdn.poehali.dev/files/cfc88af3-3401-452f-a7b9-63088be64b4b.png" alt="Барабан" className="w-20 h-20 opacity-30" />
+        <img src="https://cdn.poehali.dev/files/0d4df561-e59b-4ecb-b746-90470e66a195.png" alt="Доул" className="w-15 h-15 opacity-30" />
       </div>
     </section>
   );

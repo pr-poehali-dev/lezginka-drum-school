@@ -5,8 +5,8 @@ const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-black/20"></div>
-      <div className="container px-6 relative z-10 mx-[15px]">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+      <div className="container px-4 relative z-10 mx-[15px]">
+        <div className="max-w-4xl text-center animate-fade-in mx-[15px]">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up">
             Почувствуй
             <span className="block text-secondary animate-pulse-dance" style={{ textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white' }}>Ритмы Гор</span>
@@ -32,7 +32,7 @@ const HeroSection = () => {
         <Icon name="Music" size={40} className="text-white/30" />
       </div>
       <div className="absolute bottom-20 right-10 animate-pulse-dance" style={{animationDelay: '1s'}}>
-        <img src="https://cdn.poehali.dev/files/cfc88af3-3401-452f-a7b9-63088be64b4b.png" alt="Барабан" className="w-20 h-20 opacity-30" />
+        <img src="https://cdn.poehali.dev/files/4e255d5e-b3d5-469c-8c44-fdff9d14e5de.png" alt="Доул" className="w-20 h-20 opacity-30" />
       </div>
     </section>
   );

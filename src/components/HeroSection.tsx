@@ -15,7 +15,12 @@ const HeroSection = () => {
             Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-4 animate-fade-in">
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="text-lg px-8 py-4 animate-fade-in"
+              onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Icon name="Play" className="mr-2" />
               Начать обучение
             </Button>

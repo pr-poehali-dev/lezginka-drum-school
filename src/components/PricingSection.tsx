@@ -19,7 +19,7 @@ const PricingSection = () => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-3 text-gray-600">
-                <li>✓ 8 занятий</li>
+                <li>✓ 8 занятий барабаны</li>
                 <li>✓ Барабаны и танцы</li>
                 <li>✓ Пробное занятие бесплатно</li>
               </ul>

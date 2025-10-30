@@ -14,12 +14,12 @@ const PricingSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Card className="text-center hover:shadow-xl transition-all duration-300 animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl">Разовое занятие</CardTitle>
-              <div className="text-4xl font-bold text-primary">800₽</div>
+              <CardTitle className="text-2xl">Общий абонемент</CardTitle>
+              <div className="text-4xl font-bold text-primary">5000₽</div>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3 text-gray-600">
-                <li>✓ Одно занятие</li>
+                <li>✓ 8 занятий</li>
                 <li>✓ Любое направление</li>
                 <li>✓ Пробное занятие</li>
               </ul>

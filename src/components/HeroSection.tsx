@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-br from-primary via-secondary to-primary text-white py-12 sm:py-16 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-black/20"></div>
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-15">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up">
             Почувствуй

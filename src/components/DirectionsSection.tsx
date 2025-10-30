@@ -10,32 +10,28 @@ const DirectionsSection = () => {
       description: "Традиционный танец с огненным характером",
       level: "Начинающие",
       duration: "1.5 часа",
-      price: "3500₽/мес",
-      image: "https://cdn.poehali.dev/files/33a1ac19-6862-4196-ac1e-04c36557f346.png"
+      price: "3500₽/мес"
     },
     {
       title: "Кавказские барабаны",
       description: "Ритмы гор в ваших руках",
       level: "Начинающие",
       duration: "1 час",
-      price: "3500₽/мес",
-      image: "https://cdn.poehali.dev/files/dfd1eba8-2fae-4385-82dd-56cfd85cfd86.png"
+      price: "3500₽/мес"
     },
     {
       title: "Свадебная лезгинка",
       description: "Грациозность и благородство",
       level: "Начинающие",
       duration: "1.5 часа",
-      price: "3500₽/мес",
-      image: "https://cdn.poehali.dev/files/33a1ac19-6862-4196-ac1e-04c36557f346.png"
+      price: "3500₽/мес"
     },
     {
       title: "Индивидуальные занятия",
       description: "Воинственность и сила гор",
       level: "Начинающие",
       duration: "1.5 часа",
-      price: "2500₽/час",
-      image: "https://cdn.poehali.dev/files/dfd1eba8-2fae-4385-82dd-56cfd85cfd86.png"
+      price: "2500₽/час"
     }
   ];
 
@@ -53,20 +49,9 @@ const DirectionsSection = () => {
           {directions.map((direction, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group animate-fade-in border-0 shadow-lg overflow-hidden"
+              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group animate-fade-in border-0 shadow-lg"
               style={{animationDelay: `${index * 0.2}s`}}
             >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={direction.image} 
-                  alt={direction.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <Badge variant="secondary" className="absolute top-4 right-4 bg-white text-primary">
-                  {direction.level}
-                </Badge>
-              </div>
               <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white">
                 <div className="flex justify-between items-start">
                   <div>
@@ -75,6 +60,9 @@ const DirectionsSection = () => {
                       {direction.description}
                     </CardDescription>
                   </div>
+                  <Badge variant="secondary" className="bg-white text-primary">
+                    {direction.level}
+                  </Badge>
                 </div>
               </CardHeader>
               <CardContent className="p-6">

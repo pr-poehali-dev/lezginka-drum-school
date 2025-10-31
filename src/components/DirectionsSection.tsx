@@ -16,7 +16,7 @@ const DirectionsSection = () => {
       title: "Кавказские барабаны",
       description: "Ритмы гор в ваших руках",
       level: "Начинающие",
-      duration: "1 час",
+      duration: "1.5 часа",
       price: "3500₽/мес"
     },
     {

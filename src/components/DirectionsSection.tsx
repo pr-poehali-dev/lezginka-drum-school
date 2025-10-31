@@ -23,7 +23,7 @@ const DirectionsSection = () => {
       title: "Свадебная лезгинка",
       description: "Грациозность и благородство",
       level: "Начинающие",
-      duration: "1.5 часа",
+      duration: "1 час",
       price: "3500₽/мес"
     },
     {

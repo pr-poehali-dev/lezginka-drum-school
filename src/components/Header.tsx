@@ -8,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['directions', 'schedule', 'teachers', 'gallery', 'contacts'];
+      const sections = ['directions', 'schedule', 'teachers', 'pricing', 'gallery', 'contacts'];
       const headerHeight = 80;
       
       for (const sectionId of sections) {
@@ -67,6 +67,7 @@ const Header = () => {
           <button onClick={() => handleScrollToSection('directions')} className={`transition-colors ${activeSection === 'directions' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Направления</button>
           <button onClick={() => handleScrollToSection('schedule')} className={`transition-colors ${activeSection === 'schedule' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Расписание</button>
           <button onClick={() => handleScrollToSection('teachers')} className={`transition-colors ${activeSection === 'teachers' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Преподаватели</button>
+          <button onClick={() => handleScrollToSection('pricing')} className={`transition-colors ${activeSection === 'pricing' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Цены</button>
           <button onClick={() => handleScrollToSection('gallery')} className={`transition-colors ${activeSection === 'gallery' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Галерея</button>
           <button onClick={() => handleScrollToSection('contacts')} className={`transition-colors ${activeSection === 'contacts' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Контакты</button>
         </nav>
@@ -112,6 +113,12 @@ const Header = () => {
                 className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'teachers' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Преподаватели
+              </button>
+              <button 
+                onClick={() => handleScrollToSection('pricing')}
+                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'pricing' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
+              >
+                Цены
               </button>
               <button 
                 onClick={() => handleScrollToSection('gallery')}

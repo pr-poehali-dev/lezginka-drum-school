@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const PricingSection = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="pricing" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Цены</h2>
@@ -23,7 +23,12 @@ const PricingSection = () => {
                 <li>✓ Любое направление</li>
                 <li>✓ Пробное занятие бесплатно</li>
               </ul>
-              <Button className="w-full mt-6">Записаться</Button>
+              <Button 
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full mt-6"
+              >
+                Записаться
+              </Button>
             </CardContent>
           </Card>
 
@@ -43,7 +48,12 @@ const PricingSection = () => {
                 <li></li>
                 <li>✓ Скидка 40 %</li>
               </ul>
-              <Button className="w-full mt-6">Записаться</Button>
+              <Button 
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full mt-6"
+              >
+                Записаться
+              </Button>
             </CardContent>
           </Card>
 
@@ -58,7 +68,12 @@ const PricingSection = () => {
                 <li>✓ Гибкое расписание</li>
                 <li>✓ Быстрый прогресс</li>
               </ul>
-              <Button className="w-full mt-6">Записаться</Button>
+              <Button 
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full mt-6"
+              >
+                Записаться
+              </Button>
             </CardContent>
           </Card>
         </div>

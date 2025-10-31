@@ -74,7 +74,10 @@ const DirectionsSection = () => {
                     </div>
                     <div className="text-2xl font-bold text-primary">{direction.price}</div>
                   </div>
-                  <Button className="w-full group-hover:bg-primary group-hover:text-white transition-all">
+                  <Button 
+                    onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="w-full group-hover:bg-primary group-hover:text-white transition-all"
+                  >
                     Записаться на занятие
                     <Icon name="ArrowRight" className="ml-2" />
                   </Button>

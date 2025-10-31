@@ -72,7 +72,12 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button className="hidden sm:block text-sm px-3 py-2 sm:px-4 sm:py-2">Записаться</Button>
+          <Button 
+            onClick={() => handleScrollToSection('contacts')}
+            className="hidden sm:block text-sm px-3 py-2 sm:px-4 sm:py-2"
+          >
+            Записаться
+          </Button>
           
           {/* Mobile Menu Button */}
           <button
@@ -121,7 +126,7 @@ const Header = () => {
                 Контакты
               </button>
               <Button 
-                onClick={closeMenu}
+                onClick={() => handleScrollToSection('contacts')}
                 className="w-full mt-4"
               >
                 Записаться

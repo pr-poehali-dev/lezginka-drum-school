@@ -34,11 +34,11 @@ const PricingSection = () => {
             <CardHeader>
               <CardTitle className="text-2xl">Общий абонемент</CardTitle>
               <div className="text-4xl font-bold text-primary">5000₽</div>
-              <div className="text-sm text-gray-500">8 занятий барабаны</div>
+              <div className="text-sm text-gray-500"></div>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3 text-gray-600">
-                <li>✓ 8 занятий в месяц</li>
+                <li>✓ 8 занятий барабаны</li>
                 <li>✓ 8 занятий танцы</li>
                 <li></li>
                 <li>✓ Скидка 40 %</li>

@@ -66,7 +66,6 @@ const Header = () => {
         <nav className="hidden lg:flex space-x-8">
           <button onClick={() => handleScrollToSection('directions')} className={`transition-colors ${activeSection === 'directions' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Направления</button>
           <button onClick={() => handleScrollToSection('schedule')} className={`transition-colors ${activeSection === 'schedule' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Расписание</button>
-          <button onClick={() => handleScrollToSection('teachers')} className={`transition-colors ${activeSection === 'teachers' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Преподаватели</button>
           <button onClick={() => handleScrollToSection('pricing')} className={`transition-colors ${activeSection === 'pricing' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Цены</button>
           <button onClick={() => handleScrollToSection('gallery')} className={`transition-colors ${activeSection === 'gallery' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Галерея</button>
           <button onClick={() => handleScrollToSection('contacts')} className={`transition-colors ${activeSection === 'contacts' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>Контакты</button>
@@ -107,12 +106,6 @@ const Header = () => {
                 className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'schedule' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
               >
                 Расписание
-              </button>
-              <button 
-                onClick={() => handleScrollToSection('teachers')}
-                className={`transition-colors py-2 border-b border-gray-100 text-left ${activeSection === 'teachers' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
-              >
-                Преподаватели
               </button>
               <button 
                 onClick={() => handleScrollToSection('pricing')}

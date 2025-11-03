@@ -116,7 +116,7 @@ const ContactsSection = () => {
             <div className="space-y-4">
               <div className="w-full h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=30.314923%2C59.925363&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1MDE4MRJf0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQldGE0LjQvNC-0LLQsCwgNNCQIgoNgmVCQhV8R1VC&z=16"
+                  src="https://yandex.ru/map-widget/v1/?ll=30.315400%2C59.925740&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1MDE4MRJf0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQldGE0LjQvNC-0LLQsCwgNNCQIgoNgmVCQhV8R1VC&z=17&pt=30.315400,59.925740,pm2rdm"
                   width="100%"
                   height="100%"
                   frameBorder="0"
@@ -130,7 +130,7 @@ const ContactsSection = () => {
                 <Button 
                   variant="outline" 
                   className="flex-1"
-                  onClick={() => window.open('https://yandex.ru/maps/?rtext=~59.925363,30.314923', '_blank')}
+                  onClick={() => window.open('https://yandex.ru/maps/?rtext=~59.925740,30.315400', '_blank')}
                 >
                   <Icon name="Navigation" className="mr-2" size={18} />
                   Яндекс Навигатор
@@ -138,7 +138,7 @@ const ContactsSection = () => {
                 <Button 
                   variant="outline" 
                   className="flex-1"
-                  onClick={() => window.open('https://maps.google.com/?q=59.925363,30.314923', '_blank')}
+                  onClick={() => window.open('https://maps.google.com/?q=59.925740,30.315400', '_blank')}
                 >
                   <Icon name="Navigation" className="mr-2" size={18} />
                   Google Maps

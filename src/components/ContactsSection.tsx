@@ -76,39 +76,53 @@ const ContactsSection = () => {
             </div>
           </div>
 
-          <div className="bg-gray-100 rounded-lg p-8 animate-fade-in">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Записаться на занятие</h3>
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Имя</label>
-                <input 
-                  type="text" 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Ваше имя"
-                />
+          <div className="animate-fade-in">
+            <div className="bg-gray-100 rounded-lg p-8 mb-8">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Записаться на занятие</h3>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Имя</label>
+                  <input 
+                    type="text" 
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Ваше имя"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Телефон</label>
+                  <input 
+                    type="tel" 
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Направление</label>
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    <option>Выберите направление</option>
+                    <option>Лезгинка</option>
+                    <option>Кавказские барабаны</option>
+                    <option>Адыгейские танцы</option>
+                    <option>Осетинские танцы</option>
+                  </select>
+                </div>
+                <Button className="w-full py-3 text-lg">
+                  <Icon name="Send" className="mr-2" />
+                  Отправить заявку
+                </Button>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Телефон</label>
-                <input 
-                  type="tel" 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="+7 (___) ___-__-__"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Направление</label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                  <option>Выберите направление</option>
-                  <option>Лезгинка</option>
-                  <option>Кавказские барабаны</option>
-                  <option>Адыгейские танцы</option>
-                  <option>Осетинские танцы</option>
-                </select>
-              </div>
-              <Button className="w-full py-3 text-lg">
-                <Icon name="Send" className="mr-2" />
-                Отправить заявку
-              </Button>
+            </div>
+
+            <div className="w-full h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=30.314923%2C59.925363&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1MDE4MRJf0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQldGE0LjQvNC-0LLQsCwgNNCQIgoNgmVCQhV8R1VC&z=16"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                allowFullScreen
+                style={{ border: 0 }}
+                title="Карта расположения школы Ритмы Гор"
+              ></iframe>
             </div>
           </div>
         </div>

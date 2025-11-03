@@ -113,16 +113,37 @@ const ContactsSection = () => {
               </div>
             </div>
 
-            <div className="w-full h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=30.314923%2C59.925363&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1MDE4MRJf0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQldGE0LjQvNC-0LLQsCwgNNCQIgoNgmVCQhV8R1VC&z=16"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen
-                style={{ border: 0 }}
-                title="Карта расположения школы Ритмы Гор"
-              ></iframe>
+            <div className="space-y-4">
+              <div className="w-full h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=30.314923%2C59.925363&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1MDE4MRJf0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQldGE0LjQvNC-0LLQsCwgNNCQIgoNgmVCQhV8R1VC&z=16"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  allowFullScreen
+                  style={{ border: 0 }}
+                  title="Карта расположения школы Ритмы Гор"
+                ></iframe>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => window.open('https://yandex.ru/maps/?rtext=~59.925363,30.314923', '_blank')}
+                >
+                  <Icon name="Navigation" className="mr-2" size={18} />
+                  Яндекс Навигатор
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => window.open('https://maps.google.com/?q=59.925363,30.314923', '_blank')}
+                >
+                  <Icon name="Navigation" className="mr-2" size={18} />
+                  Google Maps
+                </Button>
+              </div>
             </div>
           </div>
         </div>

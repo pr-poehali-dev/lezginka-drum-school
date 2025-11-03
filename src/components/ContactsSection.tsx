@@ -27,10 +27,17 @@ const ContactsSection = () => {
               <div className="bg-primary text-white p-2 sm:p-3 rounded-lg">
                 <Icon name="Phone" size={20} />
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Телефон</h3>
                 <p className="text-gray-600">+7 (921) 785-42-33</p>
-                <p className="text-gray-600">Ежедневно с 10:00 до 22:00</p>
+                <p className="text-gray-600 mb-3">Ежедневно с 10:00 до 22:00</p>
+                <Button 
+                  size="sm"
+                  onClick={() => window.location.href = 'tel:+79217854233'}
+                >
+                  <Icon name="Phone" className="mr-2" size={16} />
+                  Позвонить
+                </Button>
               </div>
             </div>
 

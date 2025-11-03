@@ -24,7 +24,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Направления</h4>
             <ul className="space-y-2 text-gray-400">
               <li>Кавказские барабаны</li>
-              <li>Кавказские барабаны</li>
+              <li>Лезгинка</li>
               <li>Свадебная лезгинка</li>
               <li>Осетинские танцы</li>
             </ul>

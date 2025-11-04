@@ -1,7 +1,34 @@
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { useState } from 'react';
 
 const ContactsSection = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    direction: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.phone || !formData.direction) {
+      alert('Пожалуйста, заполните все поля');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const message = `🎭 Новая заявка с сайта Ритмы Гор\n\n👤 Имя: ${formData.name}\n📱 Телефон: ${formData.phone}\n🎵 Направление: ${formData.direction}`;
+    const whatsappUrl = `https://wa.me/79217854233?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+
+    setFormData({ name: '', phone: '', direction: '' });
+    setIsSubmitting(false);
+  };
+
   return (
     <section id="contacts" className="py-12 sm:py-16 md:py-20">
       <div className="container mx-auto px-4">
@@ -86,13 +113,16 @@ const ContactsSection = () => {
           <div className="animate-fade-in">
             <div className="bg-gray-100 rounded-lg p-8 mb-8">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Записаться на занятие</h3>
-              <div className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Имя</label>
                   <input 
                     type="text" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="Ваше имя"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    required
                   />
                 </div>
                 <div>
@@ -101,23 +131,31 @@ const ContactsSection = () => {
                     type="tel" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="+7 (___) ___-__-__"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Направление</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                    <option>Выберите направление</option>
-                    <option>Лезгинка</option>
-                    <option>Кавказские барабаны</option>
-                    <option>Адыгейские танцы</option>
-                    <option>Осетинские танцы</option>
+                  <select 
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    value={formData.direction}
+                    onChange={(e) => setFormData({ ...formData, direction: e.target.value })}
+                    required
+                  >
+                    <option value="">Выберите направление</option>
+                    <option value="Лезгинка">Лезгинка</option>
+                    <option value="Кавказские барабаны">Кавказские барабаны</option>
+                    <option value="Адыгейские танцы">Адыгейские танцы</option>
+                    <option value="Осетинские танцы">Осетинские танцы</option>
                   </select>
                 </div>
-                <Button className="w-full py-3 text-lg">
-                  <Icon name="Send" className="mr-2" />
-                  Отправить заявку
+                <Button type="submit" className="w-full py-3 text-lg" disabled={isSubmitting}>
+                  <Icon name="MessageCircle" className="mr-2" />
+                  {isSubmitting ? 'Отправка...' : 'Отправить в WhatsApp'}
                 </Button>
-              </div>
+              </form>
             </div>
 
             <div className="space-y-4">

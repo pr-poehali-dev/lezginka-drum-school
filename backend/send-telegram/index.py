@@ -89,6 +89,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     try:
         with urllib.request.urlopen(req) as response:
             telegram_response = json.loads(response.read().decode('utf-8'))
+            print(f"Telegram response: {telegram_response}")
             
             if telegram_response.get('ok'):
                 return {
@@ -101,6 +102,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                     'body': json.dumps({'success': True, 'message': 'Заявка отправлена в Telegram'})
                 }
             else:
+                print(f"Telegram API error: {telegram_response}")
                 return {
                     'statusCode': 500,
                     'headers': {
@@ -110,7 +112,20 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                     'isBase64Encoded': False,
                     'body': json.dumps({'error': 'Failed to send to Telegram', 'details': telegram_response})
                 }
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode('utf-8')
+        print(f"HTTP Error: {e.code} - {error_body}")
+        return {
+            'statusCode': 500,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            'isBase64Encoded': False,
+            'body': json.dumps({'error': f'HTTP Error {e.code}', 'details': error_body})
+        }
     except Exception as e:
+        print(f"Exception: {str(e)}")
         return {
             'statusCode': 500,
             'headers': {

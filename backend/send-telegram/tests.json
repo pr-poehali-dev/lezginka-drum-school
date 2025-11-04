@@ -1,0 +1,38 @@
+{
+  "tests": [
+    {
+      "name": "Valid form submission",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Петров",
+        "phone": "+7 921 123-45-67",
+        "direction": "Лезгинка"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Missing fields",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван"
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "OPTIONS request for CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

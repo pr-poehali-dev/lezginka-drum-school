@@ -20,13 +20,29 @@ const ContactsSection = () => {
 
     setIsSubmitting(true);
 
-    const message = `🎭 Новая заявка с сайта Ритмы Гор\n\n👤 Имя: ${formData.name}\n📱 Телефон: ${formData.phone}\n🎵 Направление: ${formData.direction}`;
-    const whatsappUrl = `https://wa.me/79217854233?text=${encodeURIComponent(message)}`;
-    
-    window.open(whatsappUrl, '_blank');
+    try {
+      const response = await fetch('https://functions.poehali.dev/b216292d-a7f9-40a4-a39b-b03ae401c836', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setFormData({ name: '', phone: '', direction: '' });
-    setIsSubmitting(false);
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
+        setFormData({ name: '', phone: '', direction: '' });
+      } else {
+        alert('Ошибка при отправке заявки. Попробуйте позже или свяжитесь с нами по телефону.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Ошибка при отправке заявки. Попробуйте позже или свяжитесь с нами по телефону.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -152,8 +168,8 @@ const ContactsSection = () => {
                   </select>
                 </div>
                 <Button type="submit" className="w-full py-3 text-lg" disabled={isSubmitting}>
-                  <Icon name="MessageCircle" className="mr-2" />
-                  {isSubmitting ? 'Отправка...' : 'Отправить в WhatsApp'}
+                  <Icon name="Send" className="mr-2" />
+                  {isSubmitting ? 'Отправка...' : 'Записаться на занятие'}
                 </Button>
               </form>
             </div>

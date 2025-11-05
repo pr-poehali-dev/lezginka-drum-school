@@ -62,7 +62,7 @@ const ContactsSection = () => {
               <div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Адрес</h3>
                 <p className="text-sm sm:text-base text-gray-600">г. Санкт-Петербург, ул. Ефимова, д. 4А   БЦ "МИР"</p>
-                <p className="text-sm sm:text-base text-gray-600">Метро "Садовая / Сенная / Спасская", 2 минуты пешком</p>
+                <p className="text-sm sm:text-base text-gray-600">Метро "Садовая / Сенная / Спасская", 4 минуты пешком</p>
               </div>
             </div>
 
